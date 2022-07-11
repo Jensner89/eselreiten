@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Der Countdown zum Eselreiten</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html#page-top"><img src="assets/img/logo.svg" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html#backgrounds">Hintergr&uuml;nde</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#themule">Der Esel</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#aboutdennis">Was bisher geschah</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#track">Die Strecke</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Willkommen zu Dennis Eselreiten Countdown!</div>
+                <div class="masthead-heading text-uppercase" id="countdown">&nbsp;<br>&nbsp;</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="index.html#services">Was hat es mit dem Esel auf sich?</a>
+            </div>
+        </header>
+        <!-- Impressum-->
+        <section class="page-section" id="impressum">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Impressum</h2>
+                </div>
+                <div class="row text-center">
+                    <h3 class="section-subheading text-muted">Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
+                    <div>
+                        <img src="assets/img/kontakt.png" class="img-fluid" width="200px">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team-->
+        <section class="page-section bg-light" id="aboutUs">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">&Uuml;ber uns</h2>
+                    <h3 class="section-subheading text-muted">Wer sind die K&ouml;pfe hinter dieser Webseite?</h3>
+                </div>
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/marina.png" alt="..." />
+                            <h4>Marina</h4>
+                            <p class="text-muted">Die liebe kleine Schwester</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/jens.png" alt="..." />
+                            <h4>Jens</h4>
+                            <p class="text-muted">Der herzallerliebste Bruder</p>
+                        </div>
+                    </div>
+ 
+                </div>
+            </div>
+        </section>
+  
+       
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; eselreiten-countdown.de 2022</div>
+      
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#impressum">Impressum</a>
+                        <a class="link-dark text-decoration-none" href="#aboutUs">Die Geschwister hinter der Aktion</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Dec 3, 2025 14:00:00").getTime();
+            
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+            
+              // Get today's date and time
+              var now = new Date().getTime();
+            
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+            
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              if(days < 10){
+                days = "0" + days;
+              }
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              if(hours < 10){
+                hours = "0" + hours;
+              }
+
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              if(minutes < 10){
+                minutes = "0" + minutes;
+              }
+
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              if(seconds < 10){
+                seconds = "0" + seconds;
+              }
+            
+              // Display the result in the element with id="countdown"
+              document.getElementById("countdown").innerHTML = days + " Tage<br/>" + hours + ":" + minutes + ":" + seconds;
+            
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "DENNIS IST AM ESELREITEN";
+              }
+            }, 1000);
+        </script>
+    </body>
+</html>
