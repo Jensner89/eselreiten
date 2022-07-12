@@ -7,15 +7,7 @@ var xhr = new XMLHttpRequest();
 form.addEventListener("submit", (e) => {
     document.getElementById("submitErrorMessage").classList.add('d-none');
     document.getElementById("submitErrorMessage").classList.add('d-none');
-
     e.preventDefault();
-
-    formData = new FormData();
-    formData.append("name", document.getElementById("name").value);
-    formData.append("email", document.getElementById("email").value);
-    formData.append("phone", document.getElementById("phone").value);
-    formData.append("message", document.getElementById("message").value);
-
 
     xhr.onload = function() {
         console.log('DONE: ', xhr.status);
@@ -26,8 +18,14 @@ form.addEventListener("submit", (e) => {
         }
     };
 
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
     xhr.open("POST", actionPath);
-    xhr.send('name=' + document.getElementById("name").value + '&email=' + document.getElementById("email").value + "&phone=" + document.getElementById("phone").value + "&message=" + document.getElementById("message").value);
+
+    data = "data%name%5D=" + document.getElementById("name").value + "&data%5Bemail%5D=" + document.getElementById("email").value + "&data%5Bphone%5D=" + document.getElementById("phone").value + "&data%5Bmessage%5D=" + document.getElementById("message").value;
+    xhr.send(data);
+
+    //xhr.send('name=' + document.getElementById("name").value + '&email=' + document.getElementById("email").value + "&phone=" + document.getElementById("phone").value + "&message=" + document.getElementById("message").value);
 
 
 
