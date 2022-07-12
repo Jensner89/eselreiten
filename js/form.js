@@ -22,7 +22,7 @@ form.addEventListener("submit", (e) => {
 
     xhr.open("POST", actionPath);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    data = "data%name%5D=" + document.getElementById("name").value + "&data%5Bemail%5D=" + document.getElementById("email").value + "&data%5Bphone%5D=" + document.getElementById("phone").value + "&data%5Bmessage%5D=" + document.getElementById("message").value;
+    data = "name=" + document.getElementById("name").value + "&email=" + document.getElementById("email").value + "&phone=" + document.getElementById("phone").value + "&message=" + document.getElementById("message").value;
     xhr.send(data);
 
     //xhr.send('name=' + document.getElementById("name").value + '&email=' + document.getElementById("email").value + "&phone=" + document.getElementById("phone").value + "&message=" + document.getElementById("message").value);
