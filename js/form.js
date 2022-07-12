@@ -11,7 +11,6 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     formData = new FormData(form);
-    actionPath = form.getAttribute("action");
     xhr.onload = function() {
         console.log('DONE: ', xhr.status);
         if (xhr.status == 200) {
