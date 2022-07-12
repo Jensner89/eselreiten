@@ -27,7 +27,7 @@ form.addEventListener("submit", (e) => {
     };
 
     xhr.open("POST", actionPath);
-    xhr.send(formData);
+    xhr.send('name=' + document.getElementById("name").value + '&email=' + document.getElementById("email").value + "&phone=" + document.getElementById("phone").value + "&message=" + document.getElementById("message").value);
 
 
 
