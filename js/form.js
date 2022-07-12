@@ -1,6 +1,6 @@
 var form = document.getElementById("contactForm"),
     actionPath = "https://ortwerth.com/app/web/contact.php";
-formData = null;
+
 
 var xhr = new XMLHttpRequest();
 
@@ -10,7 +10,13 @@ form.addEventListener("submit", (e) => {
 
     e.preventDefault();
 
-    formData = new FormData(form);
+    formData = new FormData();
+    formData.append("name", document.getElementById("name").value);
+    formData.append("email", document.getElementById("email").value);
+    formData.append("phone", document.getElementById("phone").value);
+    formData.append("message", document.getElementById("message").value);
+
+
     xhr.onload = function() {
         console.log('DONE: ', xhr.status);
         if (xhr.status == 200) {
